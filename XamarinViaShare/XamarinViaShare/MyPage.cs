@@ -32,11 +32,10 @@ namespace XamarinViaShare
 
            _description = new Editor
            {
-               Text = "Message......"
+               Text = "Message......",
+               HeightRequest = 400,
            };
 
-
-         
            _share.Clicked += ShareContent;
 
             Content = new StackLayout {
