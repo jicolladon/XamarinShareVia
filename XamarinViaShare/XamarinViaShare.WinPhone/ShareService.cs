@@ -20,6 +20,10 @@ namespace XamarinViaShare.WinPhone
             shareLinkTask.LinkUri = new Uri(url, UriKind.Absolute);
             shareLinkTask.Message = details;
             shareLinkTask.Show();
+
+            ShareStatusTask share = new ShareStatusTask();
+            share.Status = title + " " + details + " " + url;
+            share.Show();
         }
 
         void ShareEighPoint1(string title, string details, string url)
